@@ -108,9 +108,9 @@ module.exports = (api, options) => {
               throw path.get('specifiers')[idx].buildCodeFrameError('Default import is not supported')
             }
 
-            if (specifier.type === 'ImportNamespaceSpecifier') {
+            /*if (specifier.type === 'ImportNamespaceSpecifier') {
               throw path.get('specifiers')[idx].buildCodeFrameError('Wildcard import is not supported')
-            }
+            }*/
 
             if (specifier.imported && specifier.local) {
               const importedId = specifier.imported.name
